@@ -1,27 +1,21 @@
-
 import 'dart:io';
 
 void main()
 {
-  int x = addSum(1,2);
-  print(x);
+var list1 = [3,5,1,7];
 
-  for(int i = 0;i<5;i++)
-    {
-      print('hello ${i + 1}');
-    }
 
-  String? y;
-  stdout.write("Enter name: ");
-  y = stdin.readLineSync();
+list1.add(555);
+ var list2 = [];
+ list2.add("abd");
+ list2.addAll(list1);
 
-  print("Hey,$y");
+ var list3 = [];
+ list3.insert(0,"riz");
 
+ var flist = [];
+ flist.addAll(list1);
+flist.insertAll(0, list2);
+print("$flist");
 
 }
-
-int addSum(int a,int b)
-{
-  return a+b;
-}
-
